@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "d35967e1-c1cb-4005-b3d1-1e1b6d9bae4b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18265327"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"email\": \"adonay10@gmail.com\",\r\n    \"fingerPrint\": \"123adonay\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Alexi\",\r\n    \"email\": \"alexi1@gmail.com\",\r\n    \"fingerPrint\": \"jkcfhngujj\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Adiel Carcamos\",\r\n    \"specialty\": \"Cirujano\",\r\n    \"license\": \"Comprada\",\r\n    \"birthDay\": \"2000/03/12T12:00\",\r\n    \"phone\": \"45764565\",\r\n    \"direction\": \"La nueva\",\r\n    \"user\": \"62a74d4932563b16cfadbc48\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/doctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "living",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/living",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"living"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activitis",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activitisName\": \"Dia de operaciones\",\r\n    \"description\": \"Cirigias casuales\",\r\n    \"doctor\": \"62a76519fef455c05cecd6c7\",\r\n    \"living\": \"62a761fffef455c05cecd6b6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/activitis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"activitis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "finishHour",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"finishActivity\": \"2022-06-13T18:40:28.429Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/activitis/finishHour/62a76624fef455c05cecd6ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"activitis",
+						"finishHour",
+						"62a76624fef455c05cecd6ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFkb25heSIsImVtYWlsIjoiYWRvbmF5MTBAZ21haWwuY29tIiwic3RhdHVzIjoiYWN0aXZvIiwiY3JlYXRlZF9hdCI6IjIwMjItMDYtMTNUMTQ6NDQ6MjUuOTQ3WiIsImlkIjoiNjJhNzRkNDkzMjU2M2IxNmNmYWRiYzQ4IiwiaWF0IjoxNjU1MTM3MTIyLCJleHAiOjE2NTUyMjM1MjJ9.MEYCIQC3jO2KtAHgg67f1MC-FNftzqVZwbqihGgrQN8iVcUCawIhAOYtGxRZ1aSN0hVzz5LlNB69sjcfDnR82_2c4I74kCoC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"finish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/living/status/62a769f7fef455c05cecd6d8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"living",
+						"status",
+						"62a769f7fef455c05cecd6d8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
